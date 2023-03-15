@@ -1,0 +1,13 @@
+<div style="display: flex; justify-content: space-between;">
+  <h1>List of Books</h1>
+  <button (click)="HandleAddBook()">Add Book</button>
+</div>
+
+<ul *ngFor="let book of books;index as i">
+  <li>
+    <strong>{{i+1}}</strong><br>
+  </li>
+  <label>Author</label> {{book.author}} <br>
+  <label>Description</label> {{book.description}}<br>
+  <label>Date</label> {{book.date | date:'yyyy-MM-dd'}}<br>
+</ul>

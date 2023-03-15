@@ -1,0 +1,15 @@
+<h1>Add Books</h1>
+
+
+<form>
+  <label for="author">Author:</label>
+  <input type="text" id="author" name="author" [(ngModel)]="book.author">
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date" [(ngModel)]="book.date">
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" [(ngModel)]="book.description"></textarea>
+
+  <button type="submit" (click)="HandleSubmitBook()">Submit</button>
+</form>
