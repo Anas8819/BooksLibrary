@@ -40,3 +40,11 @@ button {
 button:hover {
   background-color: #555555;
 }
+
+input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+}
